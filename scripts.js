@@ -6,7 +6,7 @@ let sobremesa;
 let preco_sobremesa;
 let botao_pedido = document.querySelector(".menu-base .botao-pedir")
 //Colocar aqui o numero do celular do restaurante
-const celular = 5521991037336
+const celular = 5521999999999
 
 function EscolherPrato(escolha){
 
