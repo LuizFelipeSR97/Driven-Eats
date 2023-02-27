@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>DrivenEats</title>
+  </head>
+  <body>
+    <div class="menu-topo">
+        <h1 onclick="teste()">DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="conteudo">
+        <div class="pedido prato">
+            <h1>Primeiro, seu prato</h1>
+            <div class="lista">
+                <div class="opcao clicavel" onclick="EscolherPrato(this)">
+                    <img src="./img/miojo.jpg"/>
+                    <div class="titulo escolha1">Miojo gourmet</div>
+                    <div class="descricao">
+                        Classico miojo com recheio de calabresa e cebola
+                    </div>
+                    <div class="preco">
+                        R$18,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherPrato(this)">
+                    <img src="./img/contra-file.jpg"/>
+                    <div class="titulo escolha1">Contra-file</div>
+                    <div class="descricao">
+                        150g de contra-file acompanhado de arroz branco, farofa e salada
+                    </div>
+                    <div class="preco">
+                        R$32,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherPrato(this)">
+                    <img src="./img/frango-assado.jpg"/>
+                    <div class="titulo escolha1">Frango divino</div>
+                    <div class="descricao">
+                        Pedaço de frango assado acompanhado de batata frita e salada
+                    </div>
+                    <div class="preco">
+                        R$22,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherPrato(this)">
+                    <img src="./img/omelete.jpeg"/>
+                    <div class="titulo escolha1">Omelete de queijo</div>
+                    <div class="descricao">
+                        Omelete cremosa com pitada de queijo derretido
+                    </div>
+                    <div class="preco">
+                        R$13,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherPrato(this)">
+                    <img src="./img/empadao-frango.jpeg"/>
+                    <div class="titulo escolha1">Empadão de frango</div>
+                    <div class="descricao">
+                        Pedaço caprichado de empadão de frango
+                    </div>
+                    <div class="preco">
+                        R$20,90
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pedido bebida">
+            <h1>Agora, sua bebida</h1>
+            <div class="lista">
+                <div class="opcao clicavel" onclick="EscolherBebida(this)">
+                    <img src="./img/refri.jpg"/>
+                    <div class="titulo escolha2">Refrigerante</div>
+                    <div class="descricao">
+                        Lata de refrigerante: Coca, Guarana ou Pepsi
+                    </div>
+                    <div class="preco">
+                        R$3,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherBebida(this)">
+                    <img src="./img/suco.jpg"/>
+                    <div class="titulo escolha2">Suco natural</div>
+                    <div class="descricao">
+                        Sabores: laranja, morango, uva e limão
+                    </div>
+                    <div class="preco">
+                        R$6,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherBebida(this)">
+                    <img src="./img/cerveja.jpg"/>
+                    <div class="titulo escolha2">Cerveja</div>
+                    <div class="descricao">
+                        Uma cervejinha gelada pra refrescar
+                    </div>
+                    <div class="preco">
+                        R$4,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherBebida(this)">
+                    <img src="./img/agua.jpeg"/>
+                    <div class="titulo escolha2">Água sem gás</div>
+                    <div class="descricao">
+                        Garrafa de água sem gás
+                    </div>
+                    <div class="preco">
+                        R$2,00
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherBebida(this)">
+                    <img src="./img/agua-gas.jpeg"/>
+                    <div class="titulo escolha2">Água com gás</div>
+                    <div class="descricao">
+                        Garrafa de água com gás
+                    </div>
+                    <div class="preco">
+                        R$3,00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pedido sobremesa">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="lista">
+                <div class="opcao clicavel" onclick="EscolherSobremesa(this)">
+                    <img src="./img/salada-de-frutas.jpg"/>
+                    <div class="titulo escolha3">Salada de frutas</div>
+                    <div class="descricao">
+                        Um mix de frutas para manter o equilíbrio após a refeição
+                    </div>
+                    <div class="preco">
+                        R$4,50
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherSobremesa(this)">
+                    <img src="./img/brigadeiro.jpg"/>
+                    <div class="titulo escolha3">Brigadeiro</div>
+                    <div class="descricao">
+                        O docinho queridinho do brasileiro
+                    </div>
+                    <div class="preco">
+                        R$2,50
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherSobremesa(this)">
+                    <img src="./img/pudim.jpg"/>
+                    <div class="titulo escolha3">Pudim</div>
+                    <div class="descricao">
+                        Uma fatia deliciosa de pudim de leite condensado
+                    </div>
+                    <div class="preco">
+                        R$5,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherSobremesa(this)">
+                    <img src="./img/mousse.jpeg"/>
+                    <div class="titulo escolha3">Mousse de maracujá</div>
+                    <div class="descricao">
+                        Pote de mousse de maracujá delicioso
+                    </div>
+                    <div class="preco">
+                        R$6,90
+                    </div>
+                </div>
+                <div class="opcao clicavel" onclick="EscolherSobremesa(this)">
+                    <img src="./img/bombom.jpeg"/>
+                    <div class="titulo escolha3">Bombom</div>
+                    <div class="descricao">
+                        Opções: Ouro Branco, Sonho de Valsa e Serenata de Amor
+                    </div>
+                    <div class="preco">
+                        R$1,50
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-base">
+        <div class="botao-pedir clicavel" onclick="prosseguir()">
+            <h1>Selecione os 3 itens para fechar o pedido</h1>
+        </div>
+    </div>
+    <div class="tela-final ocultar">
+        <div class="confirmacao-pedido">
+            <h1>Confirme seu pedido</h1>
+                <div class="escolhas-confirmacao">
+                    <span><h2 class="prato">Prato</h2></span>
+                    <span><h2 class="preco_prato">Preco do prato</h2></span>
+                </div>
+                <div class="escolhas-confirmacao">
+                    <span><h2 class="bebida">Bebida</h2></span>
+                    <span><h2 class="preco_bebida">Preco da bebida</h2></span>
+                </div>
+                <div class="escolhas-confirmacao">
+                    <span><h2 class="sobremesa">Sobremesa</h2></span>
+                    <span><h2 class="preco_sobremesa">Preco da sobremesa</h2></span>
+                </div>
+                <div class="escolhas-confirmacao">
+                    <span><h3 class="total">TOTAL</h3></span>
+                    <span><h3 class="preco_total">Preco total</h3></span>
+                </div>
+            <div class="botao clicavel" onclick="avancarPedido()">Tudo certo, pode pedir!</div>
+            <h1 class="clicavel" onclick="voltar()">Cancelar</h1>
+        </div>
+        <div class="confirmacao-infos ocultar">
+            <input class="inputNome" placeholder="Nome"/>
+            <input class="inputEndereco" placeholder="Endereço"/>
+            <div class="botao clicavel" onclick="avancarInfos()">Confirmar</div>
+            <h1 class="clicavel" onclick="voltar()">Cancelar</h1>
+        </div>
+        <div class="ultima-tela ocultar">
+            <div class="mensagem">
+                <p>Muito obrigado pelo pedido!</p><p>Seu pedido chegará até você em até 6 minutos.</p><p>Bom apetite!</p>
+            </div>
+                
+            </form>
+            <h1 class="clicavel" onclick="reiniciar()">Voltar</h1>
+        </div>
+    </div>
+    <script src="./scripts.js">
+    </script>
+  </body>
+</html>
